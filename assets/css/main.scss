@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	font-family: 'Fira Sans';
+}
+
+body{
+	font-family: 'Fira Sans';
+	font-size: 16px;
+	@apply antialiased overflow-x-hidden;
+}
+
+
+#mainWrapper{
+	@apply will-change-auto transition-all;
+}
+
+.container-wrapper{
+	@apply container px-5 mx-auto max-w-6xl xl:px-0;
+}
+
+
+
+.map-wrapper{
+	background: #F3F3F3;
+	box-shadow: -100px 0 0 #F3F3F3, 100px 0 0 #F3F3F3;
+	@apply h-full;
+
+
+	#map{
+		@apply md:pl-10 md:pt-10 lg:h-[560px] xl:h-[700px];
+
+		svg{
+			height: 100%;
+
+			*{
+				stroke: #B3C5C1;
+				// transition: .15s ease-in-out;
+				cursor: pointer;
+			}
+
+			g > circle{
+				stroke: #FFF;
+				fill: #FFF;
+				opacity: 0;
+				visibility: hidden;
+				// transition: .1s ease-in-out;
+				pointer-events: none;
+				filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.3));
+			}
+
+			g.active > circle,
+			g:hover > circle{
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.no-selectable,
+			.no-selectable *{
+				cursor: default;
+			}
+		}
+	}// #map
+
+	
+	@media (min-width: 768px){
+		box-shadow: none;
+	}
+
+}// map-wrapper

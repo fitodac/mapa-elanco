@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^2.0.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.8",
+    "@nuxtjs/tailwindcss": "^6.2.0",
+    "@pinia/nuxt": "^0.4.6",
+    "@vueuse/core": "^9.11.1",
+    "@vueuse/nuxt": "^9.11.1",
+    "nuxt": "^3.1.0",
+    "pinia": "^2.0.29"
+  }
+}
