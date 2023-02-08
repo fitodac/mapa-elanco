@@ -72,6 +72,10 @@ export default {
 
 	acceso_usuarios: `Si tienes una<br class="hidden md:block"/> mascota, accede aquí.`,
 	acceso_veterinarios: `Veterinario,<br class="hidden md:block"/> accede aquí.`,
-	conocer_mas: 'Conocer más'
+	conocer_mas: 'Conocer más',
+
+	products_title: `Te ayudamos a proteger a tu perro contra la leishmaniosis`,
+	seresto_description: `El collar que libera de pulgas, garrapatas <strong class="text-brand-blue">y reduce el riesgo de leishmaniosis canina.</strong>`,
+	advantix_description: `<strong class="text-red-700">La pipeta experta en leishmaniosis</strong> que también elimina pulgas y garrapatas.`
 
 }

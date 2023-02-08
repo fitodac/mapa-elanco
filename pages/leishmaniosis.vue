@@ -102,6 +102,9 @@ import Users2 from '@/components/icons/Users2'
 		</div>
 	</div>
 </section>
+
+
+<Products />
 </template>
 
 
