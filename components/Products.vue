@@ -14,12 +14,12 @@
 			
 			<div class="text-center">
 				<img 
-					src="img/prod-seresto.webp" 
+					src="/img/prod-seresto.webp" 
 					alt="Seresto collar anti pulgas"
 					class="w-11/12 mx-auto">
 
 				<img 
-					src="img/logo-seresto.svg" 
+					src="/img/logo-seresto.svg" 
 					alt="logo Seresto"
 					class="w-40 mx-auto">
 
@@ -37,12 +37,12 @@
 			<div class="text-center">
 
 				<img 
-					src="img/prod-advantix.webp" 
+					src="/img/prod-advantix.webp" 
 					alt="Advantix pipeta"
 					class="w-11/12 mx-auto"/>
 
 				<img 
-					src="img/logo-advantix.svg" 
+					src="/img/logo-advantix.svg" 
 					alt="logo Advantix"
 					class="w-40 mx-auto">
 
