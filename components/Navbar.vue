@@ -49,7 +49,7 @@ const rn = route.name.split('___')
 					'w-12 group-hover:fill-white',
 					(rn[0] === 'leishmaniosis') ? 'fill-white': 'fill-brand-blue'
 				]" />
-			<span class="hidden">Prevalencia de Leishmaniosis</span>
+			<span class="hidden">Prevalencia de leishmaniosis</span>
 		</nuxt-link>
 
 		<nuxt-link 
@@ -62,7 +62,7 @@ const rn = route.name.split('___')
 					'w-12 group-hover:fill-white',
 					(rn[0] === 'dirofilariosis') ? 'fill-white': 'fill-brand-orange'
 				]" />
-			<span class="hidden">Prevalencia de Dirofilariosis</span>
+			<span class="hidden">Prevalencia de dirofilariosis</span>
 		</nuxt-link>
 
 		<nuxt-link 
@@ -75,7 +75,7 @@ const rn = route.name.split('___')
 					'w-12 group-hover:fill-white',
 					(rn[0] === 'angiostrongilosis') ? 'fill-white': 'fill-brand-green'
 				]" />
-			<span class="hidden">Prevalencia de Angiostrongilosis</span>
+			<span class="hidden">Prevalencia de angiostrongilosis</span>
 		</nuxt-link>
 	</div>
 </div>

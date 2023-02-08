@@ -64,9 +64,9 @@ watch(route, r => {
 
 
 		<div class="text-center pt-8 pb-5 md:pb-10 lg:pb-16">
-			
-			<h1 class="main-title">{{ $t('Mapa Elanco') }}</h1>
-
+      <nuxt-link href="/">
+			  <h1 class="main-title">{{ $t('Mapa Elanco') }}</h1>
+      </nuxt-link>
 			<div class="info-title" v-html="info_title"></div>
 
 				<!-- {{ $t("de prevalencia de") }} 

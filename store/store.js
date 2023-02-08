@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import Map from '@/composables/mapClass.js'
 
 export const Store = defineStore('main', {
 	state: () => ({
@@ -21,6 +22,15 @@ export const Store = defineStore('main', {
 		getInfo( state ){
 			const resp = {...state.info, showing_info: state.showing_info}
 			return resp
+		},
+
+		isPortugal( state ){
+			const map = new Map()
+			const country_id = state.map.id ? state.map.id.replace('map-', '') : null
+			if( state.info.type === 'full' || state.info.type === 'angiostrongilosis' ){
+				return map.portugal.includes(country_id)
+			}
+			return false
 		}
 	},
 

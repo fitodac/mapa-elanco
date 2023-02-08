@@ -47,7 +47,7 @@ import Users2 from '@/components/icons/Users2'
 				</div>
 				
 				<div class="text-brand-blue-dark leading-tight mt-5">
-					Si el lugar seleccionado es de zona 4, significa que el porcentaje de riesgo de infección es muy alto. En el resto de zonas el riesgo es menor pero sigue existiendo, por lo que no debes olvidar proteger a tu mascota con antiparasitarios adecuados.
+          <strong>Si el lugar seleccionado es de zona 4</strong>, significa que el porcentaje de riesgo de infección es muy alto. En el resto de zonas el riesgo es menor pero sigue existiendo, por lo que <strong>no debes olvidar proteger a tu mascota con antiparasitarios adecuados</strong>.
 				</div>
 			</div>
 		</div>
@@ -70,9 +70,9 @@ import Users2 from '@/components/icons/Users2'
 				
 				<div class="leading-tight max-w-2xl mt-3">
 					<p>
-						La leishmaniosis es una enfermedad grave e incurable, 
-						que se puede originar tras la transmisión de leishmania 
-						infantum por los flebotomos, unos insectos similares a 
+            <strong>La leishmaniosis es una enfermedad grave e incurable</strong>,
+						que se puede originar tras la transmisión de <i>leishmania
+						infantum</i> por los <strong>flebotomos</strong>, unos insectos similares a
 						los mosquitos, que puede tener consecuencias fatales 
 						para la salud de los perros si no se previene o se 
 						diagnostica a tiempo.
@@ -96,7 +96,7 @@ import Users2 from '@/components/icons/Users2'
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="#" class="btn">Conocer más</a>
+								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">Conocer más</a>
 							</div>
 						</div>
 						
@@ -109,7 +109,7 @@ import Users2 from '@/components/icons/Users2'
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="#" class="btn">Conocer más</a>
+								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">Conocer más</a>
 							</div>
 						</div>
 

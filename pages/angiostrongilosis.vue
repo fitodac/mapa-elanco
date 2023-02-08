@@ -45,7 +45,7 @@ import Users2 from '@/components/icons/Users2'
 				</div>
 				
 				<div class="text-green-blue-dark leading-tight mt-5">
-					Si el lugar seleccionado es de zona 5, significa que el porcentaje de riesgo de infección es alto. En zonas con porcentajes más bajos el riesgo es menor pero sigue existiendo, por lo que no debes olvidar proteger a tu mascota con antiparasitarios adecuados. Pregunta a tu veterinario.
+          <strong>Si el lugar seleccionado es de zona 5, significa que el porcentaje de riesgo de infección es alto</strong>. En zonas con porcentajes más bajos el riesgo es menor pero sigue existiendo, por lo que no debes olvidar proteger a tu mascota con antiparasitarios adecuados. <strng>Pregunta a tu veterinario</strng>.
 				</div>
 			</div>
 		</div>
@@ -68,7 +68,7 @@ import Users2 from '@/components/icons/Users2'
 				
 				<div class="leading-tight max-w-2xl mt-3">
 					<p>
-						El nematodo angiostrongylus vasorum es el agente causal de la angiostrongilosis canina, una enfermedad emergente en Europa que afecta a las arterias pulmonares y el ventrículo derecho del corazón.
+						El nematodo <i>angiostrongylus vasorum</i> es el agente causal de la angiostrongilosis canina, una enfermedad emergente en Europa que afecta a las arterias pulmonares y el ventrículo derecho del corazón.
 					</p>
 					<p class="mt-3">
 						Afecta principalmente a animales salvajes, aunque estudios muestran evidencias de expansión de la enfermedad en perros.
@@ -86,7 +86,7 @@ import Users2 from '@/components/icons/Users2'
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="#" class="btn">Conocer más</a>
+								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">Conocer más</a>
 							</div>
 						</div>
 						
@@ -99,7 +99,7 @@ import Users2 from '@/components/icons/Users2'
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="#" class="btn">Conocer más</a>
+								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">Conocer más</a>
 							</div>
 						</div>
 

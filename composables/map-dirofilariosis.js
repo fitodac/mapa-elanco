@@ -412,7 +412,7 @@ map_data.islas_portugal.acores.active = map_data.islas_portugal.acores.dirofilar
 map_data.islas_portugal.acores.circle = map_data.circles
 
 // Portugal
-map_data.portugal = { stroke: '#FFFFFF' }
+map_data.portugal = { stroke: '#f9bc93' }
 
 
 

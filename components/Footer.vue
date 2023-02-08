@@ -20,7 +20,7 @@
 
 	<div class="footer-secondary">
 		<div class="container-wrapper">
-			<div>&copy; Elanco  PM-ES-22-0463</div>
+			<div>&copy; Elanco  dPM-ES-22-0463</div>
 		</div>
 	</div>
 </section>

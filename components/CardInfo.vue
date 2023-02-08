@@ -1,6 +1,7 @@
 <script setup>
 import { Store } from '@/store/store.js'
 
+
 const store = Store()
 
 const info = computed(() => store.getInfo)
@@ -8,10 +9,11 @@ const info = computed(() => store.getInfo)
 const card_header_class = ref([])
 const card_header_bg = ref('rgb(156 163 175 / 1)')
 
+
 watch(info, val => {
 
 	card_header_bg.value = ({
-		full: 'rgb(156 163 175 / 1)',
+		full: '#913393',
 		angiostrongilosis: val.angiostrongilosis?.color,
 		dirofilariosis: val.dirofilariosis?.color,
 		leishmaniosis: val.leishmaniosis?.color
@@ -27,12 +29,20 @@ const close = () => {
 	store.resetMap()
 }
 
+
+const show_info = computed(() => {
+	if( info.value.type === 'full' ) return true
+	if( info.value[info.value.type].value ) return true
+	return false
+})
 </script>
 
 
 
 <template>
-<div class="card-info-wrapper" v-if="store.showing_info">
+<div 
+	v-if="store.showing_info"
+	class="card-info-wrapper">
 	<div class="card">
 			
 		<div 
@@ -43,6 +53,7 @@ const close = () => {
 			</div>
 
 			<div class="card-title">{{ info.title }}</div>
+			<div v-if="info.type !== 'full'" class="card-alert">{{ info[info.type].alert }}</div>
 		</div>
 
 
@@ -136,13 +147,28 @@ const close = () => {
 				alt="Seresto - Advantix" 
 				class="w-48 mx-auto my-3">
 
-			<div class="text-gray-400 text-[8px] leading-none text-center mt-3">
+
+			<div v-if="show_info"
+				class="text-gray-400 text-[9px] leading-none text-center mt-3">
 				<span>
 					*Teniendo en cuenta que los perros se 
 					desplazan de unas zonas a otras, no se 
 					puede descartar que aparezcan nuevos 
 					casos de la enfermedad en zonas donde 
 					actualmente no existe.
+				</span>
+			</div>
+
+			<div 
+				v-if="store.isPortugal"
+				class="text-gray-400 text-[9px] leading-none text-center mt-2">
+				<span>
+					**Con un 0,66 % de los perros examinados positivos en ambos ELISA, 
+					la prevalencia en Portugal es aparentemente mayor que la encontrada 
+					para Alemania (Schnyder et al. 2013a) o Polonia (Schnyder et al. 2013b) 
+					y menor que en Hungría (Schnyder et al. 2015a), Reino Unido 
+					(Schnyder et al. 2013a) e Italia (Guardone et al. 2013), 
+					pero no significativamente.
 				</span>
 			</div>
 
@@ -158,7 +184,7 @@ const close = () => {
 }
 
 .card{
-	@apply w-11/12 max-w-sm md:w-full md:max-w-3xl;
+	@apply border border-white w-11/12 max-w-sm md:w-full md:max-w-3xl;
 }
 
 
@@ -173,7 +199,11 @@ const close = () => {
 
 
 .card-title{
-	@apply text-white text-2xl text-center font-bold leading-none;
+	@apply text-white text-3xl text-center font-extrabold leading-tight -mt-4;
+}
+
+.card-alert{
+	@apply text-white text-xl text-center font-bold leading-none;
 }
 
 

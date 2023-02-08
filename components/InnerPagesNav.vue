@@ -36,7 +36,7 @@
 						</div>
 
 						<div class="card-content">
-							Los flebotomos, unos insectos similares a los mosquitos, pueden transmitir la leishmania infantum, causante de la leishmaniosis en los perros, una enfermedad grave con consecuencias fatales si no se previene o diagnostica a tiempo.
+              Los <strong>flebotomos</strong>, unos insectos similares a los mosquitos, pueden transmitir la <i>leishmania infantum</i>, causante de la leishmaniosis en los perros, una enfermedad grave con consecuencias fatales si no se previene o diagnostica a tiempo.
 						</div>
 
 						<div class="">
@@ -71,7 +71,7 @@
 						</div>
 
 						<div class="card-content">
-							La enfermedad del gusano del corazón, conocida como dirofilariosis y causada por dirofilaria immitis, es una enfermedad grave y potencialmente mortal en perros que puede dejar secuelas permanentes en el animal.
+              La enfermedad del <strong>gusano del corazón</strong>, conocida como dirofilariosis y causada por <i>dirofilaria immitis</i>, es una enfermedad grave y potencialmente mortal en perros que puede dejar secuelas permanentes en el animal.
 						</div>
 
 						<div class="">
@@ -106,7 +106,7 @@
 						</div>
 
 						<div class="card-content">
-							La angiostrongilosis canina es una enfermedad emergente en Europa causada por angiostrongylus vasorum que afecta a las arterias pulmonares y el ventrículo derecho del corazón.
+              La <strong>angiostrongilosis canina</strong> es una enfermedad emergente en Europa causada por <i>angiostrongylus vasorum</i> que afecta a las arterias pulmonares y el ventrículo derecho del corazón.
 						</div>
 
 						<div class="">

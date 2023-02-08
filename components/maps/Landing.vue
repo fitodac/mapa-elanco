@@ -19,14 +19,6 @@ onMounted(() => {
 </script>
 
 <template>
-<section>
-	<div class="container-wrapper">
-		<div class="intro">
-			En este mapa encontrarás la prevalencia de enfermedades como la leishmaniosis, dirofilariosis y angiostrongilosis  en cada región de España y en Portugal. Si deseas más información sobre cada una de las enfermedades, más abajo podrás informarte.
-		</div>
-	</div>
-</section>
-
 <section class="map-section">
 	<div class="container-wrapper">
 		<div class="grid md:grid-cols-12">
@@ -65,10 +57,6 @@ onMounted(() => {
 
 
 <style scoped>
-.intro{
-	@apply text-brand-blue-dark text-lg leading-tight text-center pt-20 pb-14 md:text-xl;
-}
-
 .map-section{ @apply bg-brand-blue; }
 
 .map-data{

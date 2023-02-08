@@ -8,6 +8,29 @@ export default class Map{
 	constructor(data){
 		this.data = data
 		this.init()
+		this.portugal = [
+			'vilana_do_costelo',
+			'braga',
+			'villareal',
+			'braganca',
+			'guarda',
+			'viseu',
+			'porto',
+			'aveiro',
+			'coimbra',
+			'fig_da_foz',
+			'castelo_blanco',
+			'leiria',
+			'lisboa',
+			'santarem',
+			'portalegre',
+			'evora',
+			'setubal',
+			'beja',
+			'algarve',
+			'madeira',
+			'acores'
+		]
 	}
 
 	init(){
@@ -63,4 +86,5 @@ export default class Map{
 		})
 
 	}
+
 }

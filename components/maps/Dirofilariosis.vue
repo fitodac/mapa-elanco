@@ -31,10 +31,9 @@ onMounted(() => {
 							<img src="/img/compass.svg" alt="Brújula" class="w-10 pt-2">
 						</div>
 
-						<div class="flex-1 md:text-sm lg:text-lg">
+						<div class="flex-1 md:text-sm lg:text-2xl">
 							Selecciona una zona del mapa y descubre la 
-							prevalencia de enfermedades como la leishmaniosis, 
-							dirofilariosis y angiostrongilosis en esta región.
+							prevalencia de la dirofilariosis en esta región.
 						</div>
 
 					</div>

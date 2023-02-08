@@ -44,11 +44,11 @@ import Users2 from '@/components/icons/Users2'
 				<div class="text-brand-orange-dark text-lg leading-tight font-semibold 
 											sm:text-xl sm:leading-none 
 											lg:text-2xl lg:leading-tight">
-					Consulta en el Mapa Elanco la prevalencia de angiostrongilosis de tu zona o del lugar al que tienes pensado viajar con tu peludo.
+					Consulta en el Mapa Elanco la prevalencia de dirofilariosis de tu zona o del lugar al que tienes pensado viajar con tu peludo.
 				</div>
 				
 				<div class="text-brand-orange-dark leading-tight mt-5">
-					Si el lugar seleccionado es de zona 5, significa que el porcentaje de riesgo de infección es alto. En zonas con porcentajes más bajos el riesgo es menor pero sigue existiendo, por lo que no debes olvidar proteger a tu mascota con antiparasitarios adecuados. Pregunta a tu veterinario.
+          <strong>Si el lugar seleccionado es de zona 5, significa que el porcentaje de riesgo de infección es muy alto</strong>. En el resto de zonas el riesgo es menor pero sigue existiendo, por lo que no debes olvidar proteger a tu mascota con antiparasitarios adecuados. <strong>Pregunta a tu veterinario</strong>.
 				</div>
 			</div>
 		</div>
@@ -71,10 +71,10 @@ import Users2 from '@/components/icons/Users2'
 				
 				<div class="leading-tight max-w-2xl mt-3">
 					<p>
-						La dirofilaria immitis es un nematodo parásito que causa la enfermedad del gusano del corazón.
+						La <i>dirofilaria immitis</i> es un nematodo parásito que causa la enfermedad del gusano del corazón.
 					</p>
 					<p class="mt-3">
-						La enfermedad del gusano del corazón, causada por la dirofilaria immitis, es una enfermedad grave y potencialmente mortal en perros que puede dejar secuelas permanentes en el animal.
+						La enfermedad del gusano del corazón, causada por la <i>dirofilaria immitis</i>, es una enfermedad grave y potencialmente mortal en perros que puede dejar secuelas permanentes en el animal.
 					</p>
 
 					<p class="mt-3">
@@ -82,7 +82,7 @@ import Users2 from '@/components/icons/Users2'
 					</p>
 
 					<p class="mt-3">
-						Debido a factores como el cambio climático, España es uno de los países del sur de Europa donde el riesgo de infección en perros domésticos es moderado/alto y la dirofilariosis se ha ido extendiendo a nuevos territorios en los últimos años.
+            Debido a factores como el cambio climático, España es uno de los países del sur de Europa donde el riesgo de infección en perros domésticos es <strong>moderado/alto</strong> y la dirofilariosis se ha ido extendiendo a nuevos territorios en los últimos años.
 					</p>
 				</div>
 
@@ -97,7 +97,7 @@ import Users2 from '@/components/icons/Users2'
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="#" class="btn">Conocer más</a>
+								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">Conocer más</a>
 							</div>
 						</div>
 						
@@ -110,7 +110,7 @@ import Users2 from '@/components/icons/Users2'
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="#" class="btn">Conocer más</a>
+								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">Conocer más</a>
 							</div>
 						</div>
 

@@ -1,9 +1,5 @@
 const data = {}
 
-data.africa = {
-	id: 'map-africa',
-	color: '#F4F4F4', // fill-[#F4F4F4]
-}
 
 data.alava = {
 	id: 'map-alava',
@@ -109,14 +105,14 @@ data.avila = {
 	id: 'map-avila',
 	title: 'Ávila',
 	leishmaniosis: {
-		value: '0-7%',
-		color: '#5DA4DA',
+		value: '8-16%',
+		color: '#166FB6',
 		alert: '¡Precaución!'
 	},
 	dirofilariosis: {
-		value: null,
+		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: null,
@@ -136,7 +132,7 @@ data.badajoz = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '2-3%',
@@ -236,7 +232,7 @@ data.burgos = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -256,7 +252,7 @@ data.caceres = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -402,7 +398,7 @@ data.canarias = {
 	},
 	lanzarote: {
 		id: 'map-lanzarote',
-		title: 'Lanzaote',
+		title: 'Lanzarote',
 		leishmaniosis: {
 			value: '0%',
 			color: '#BFDCF1',
@@ -410,7 +406,7 @@ data.canarias = {
 		},
 		dirofilariosis: {
 			value: '0,1-0,9%',
-			color: '#F7AA77',
+			color: '#F7AA77', // fill-[#F7AA77]
 			alert: null
 		},
 		angiostrongilosis: {
@@ -452,7 +448,7 @@ data.castellon = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -512,7 +508,7 @@ data.cordoba = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '2-3%',
@@ -692,7 +688,7 @@ data.lacoruna = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '2-3%',
@@ -712,7 +708,7 @@ data.larioja = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '0-1%',
@@ -772,10 +768,10 @@ data.lugo = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
-		value: '3%',
+		value: '>3%',
 		color: '#02431D',
 		alert: '¡Alerta!'
 	}
@@ -852,7 +848,7 @@ data.murcia = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '>3%',
@@ -912,7 +908,7 @@ data.palencia = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -945,14 +941,14 @@ data.salamanca = {
 	id: 'map-salamanca',
 	title: 'Salamanca',
 	leishmaniosis: {
-		value: null,
-		color: '#BFDCF1',
-		alert: null
+		value: '>17%',
+		color: '#094266',
+		alert: '¡Alerta!'
 	},
 	dirofilariosis: {
-		value: null,
+		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -972,7 +968,7 @@ data.segovia = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '0%',
@@ -992,7 +988,7 @@ data.sevilla = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -1007,12 +1003,12 @@ data.soria = {
 	leishmaniosis: {
 		value: '8-16%',
 		color: '#166FB6',
-		alert: '¡Precaución!'
+		alert: null
 	},
 	dirofilariosis: {
 		value: '0,1-0,9%',
 		color: '#F7AA77', // fill-[#F7AA77]
-		alert: '¡Precaución!'
+		alert: null
 	},
 	angiostrongilosis: {
 		value: '0%',
@@ -1032,7 +1028,7 @@ data.tarragona = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '2-3%',
@@ -1072,7 +1068,7 @@ data.toledo = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -1092,7 +1088,7 @@ data.valencia = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -1112,7 +1108,7 @@ data.valladolid = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '0%',
@@ -1152,7 +1148,7 @@ data.zamora = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -1172,7 +1168,7 @@ data.zaragoza = {
 	dirofilariosis: {
 		value: '5-10%',
 		color: '#BF5A16',
-		alert: '¡Alerta!'
+		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
 		value: '1-2%',
@@ -1226,8 +1222,8 @@ data.villareal = {
 	title: 'Villa Real',
 	leishmaniosis: {
 		value: '0-7%',
-		color: '#BFDCF1',
-		alert: null
+		color: '#5DA4DA',
+		alert: '¡Precaución!'
 	},
 	dirofilariosis: {
 		value: '0-5%',
