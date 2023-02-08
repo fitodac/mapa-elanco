@@ -1267,7 +1267,7 @@ data.guarda = {
 	},
 	dirofilariosis: {
 		value: '0-5%',
-		color: '#ED8325',
+		color: '#F7AA77',
 		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {

@@ -35,6 +35,11 @@ const show_info = computed(() => {
 	if( info.value[info.value.type].value ) return true
 	return false
 })
+
+const leishmaniosis_text_red = computed(() => {
+	if( 'leishmaniosis' === info.value.type && '¡Alerta!' === info.value.leishmaniosis.alert ) return 'red-alert'
+	return ''
+})
 </script>
 
 
@@ -52,8 +57,9 @@ const show_info = computed(() => {
 				<button class="card--btn-close" @click="close">&times;</button>
 			</div>
 
-			<div class="card-title">{{ info.title }}</div>
-			<div v-if="info.type !== 'full'" class="card-alert">{{ info[info.type].alert }}</div>
+			<div 
+				class="card-title" :class="[leishmaniosis_text_red]">{{ info.title }}</div>
+			<div v-if="info.type !== 'full'" class="card-alert" :class="[leishmaniosis_text_red]">{{ info[info.type].alert }}</div>
 		</div>
 
 
@@ -202,8 +208,14 @@ const show_info = computed(() => {
 	@apply text-white text-3xl text-center font-extrabold leading-tight -mt-4;
 }
 
+
 .card-alert{
 	@apply text-white text-xl text-center font-bold leading-none;
+}
+
+.card-title.red-alert,
+.card-alert.red-alert{ 
+	@apply text-red-600; 
 }
 
 

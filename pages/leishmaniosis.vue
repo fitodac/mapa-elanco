@@ -13,12 +13,8 @@ import Users2 from '@/components/icons/Users2'
 
 <section class="info-bar">
 	<div class="container-wrapper">
-		<div>
-			1. Gálvez R, Montoya A, Cruz I, et al. Latest trends in Leishmania infantum infection in dogs in Spain, Part I: mapped seroprevalence and sand fly distributions. Parasit Vectors. 2020;13(1):204. Published 2020 Apr 21. doi:10.1186/s13071-020-04081-7
-		</div>
-		<div class="mt-0.5">
-			2. Maia C. et al., “Primeiro relatório regular da LEISHnet ONLeish – Observatório Nacional das Leishmanioses”, pag. 22-26. Janeiro-Fevereiro 2011 Veterinary Medicine.
-		</div>
+		<div>{{ $t('map_ref_leishmaniosis_p1') }}</div>
+		<div class="mt-0.5">{{ $t('map_ref_leishmaniosis_p2') }}</div>
 	</div>
 </section>
 
@@ -43,12 +39,10 @@ import Users2 from '@/components/icons/Users2'
 				<div class="text-brand-blue-dark text-lg leading-tight font-semibold 
 											sm:text-xl sm:leading-none 
 											lg:text-2xl lg:leading-tight">
-					Consulta en el Mapa Elanco la prevalencia de leishmaniosis de tu zona o del lugar al que tienes pensado viajar con tu peludo.
+					{{ $t('banner_leishmaniosis_title') }}
 				</div>
 				
-				<div class="text-brand-blue-dark leading-tight mt-5">
-          <strong>Si el lugar seleccionado es de zona 4</strong>, significa que el porcentaje de riesgo de infección es muy alto. En el resto de zonas el riesgo es menor pero sigue existiendo, por lo que <strong>no debes olvidar proteger a tu mascota con antiparasitarios adecuados</strong>.
-				</div>
+				<div class="text-brand-blue-dark leading-tight mt-5" v-html="$t('banner_leishmaniosis_content')" />
 			</div>
 		</div>
 	</div>
@@ -66,23 +60,11 @@ import Users2 from '@/components/icons/Users2'
 			</div>
 			
 			<div class="lg:col-span-9">
-				<h3>Sobre la leishmaniosis</h3>
+				<h3>{{ $t('leishmaniosis_about_title') }}</h3>
 				
 				<div class="leading-tight max-w-2xl mt-3">
-					<p>
-            <strong>La leishmaniosis es una enfermedad grave e incurable</strong>,
-						que se puede originar tras la transmisión de <i>leishmania
-						infantum</i> por los <strong>flebotomos</strong>, unos insectos similares a
-						los mosquitos, que puede tener consecuencias fatales 
-						para la salud de los perros si no se previene o se 
-						diagnostica a tiempo.
-					</p>
-					<p class="mt-3">
-						La presencia del flebotomo puede verse afectada por 
-						el cambio climático y hacer que el riesgo de infección 
-						esté presente en gran parte de España y Portugal la 
-						mayor parte del año.
-					</p>
+					<p v-html="$t('leishmaniosis_about_p1')" />
+					<p class="mt-3" v-html="$t('leishmaniosis_about_p2')" />
 				</div>
 
 				<div class="max-w-2xl mt-14">
@@ -92,11 +74,11 @@ import Users2 from '@/components/icons/Users2'
 							<div class="flex gap-x-6 items-center">
 								<Users1 class="w-20 ml-2 md:w-24" color="#094266"/>
 								
-								<div class="leading-tight font-medium flex-1 select-none">Si tienes una<br class="hidden md:block"/> mascota, accede aquí.</div>
+								<div class="leading-tight font-medium flex-1 select-none" v-html="$t('acceso_usuarios')" />
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">Conocer más</a>
+								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">{{ $t('conocer_mas') }}</a>
 							</div>
 						</div>
 						
@@ -105,11 +87,11 @@ import Users2 from '@/components/icons/Users2'
 							<div class="flex gap-x-6 items-center">
 								<Users2 class="w-20 ml-2 md:w-24" color="#094266"/>
 
-								<div class="leading-tight font-medium flex-1 select-none">Veterinario,<br class="hidden md:block"/> accede aquí.</div>
+								<div class="leading-tight font-medium flex-1 select-none" v-html="$t('acceso_veterinarios')" />
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">Conocer más</a>
+								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">{{ $t('conocer_mas') }}</a>
 							</div>
 						</div>
 

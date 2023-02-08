@@ -12,7 +12,7 @@ const rn = route.name.split('___')
 <div class="pt-6 flex justify-center items-end lg:justify-between">
 	
 	<div class="social">
-		<span class="text-brand-blue text-sm font-medium leading-none">Síguenos en</span>
+		<span class="text-brand-blue text-sm font-medium leading-none">{{ $t('siguenos') }}</span>
 		<a 
 			href="https://www.instagram.com/mimascotayyo_es/" 
 			target="_blank"
@@ -49,7 +49,7 @@ const rn = route.name.split('___')
 					'w-12 group-hover:fill-white',
 					(rn[0] === 'leishmaniosis') ? 'fill-white': 'fill-brand-blue'
 				]" />
-			<span class="hidden">Prevalencia de leishmaniosis</span>
+			<span class="hidden">{{ $t('prevalencia_leishmaniosis') }}</span>
 		</nuxt-link>
 
 		<nuxt-link 
@@ -62,7 +62,7 @@ const rn = route.name.split('___')
 					'w-12 group-hover:fill-white',
 					(rn[0] === 'dirofilariosis') ? 'fill-white': 'fill-brand-orange'
 				]" />
-			<span class="hidden">Prevalencia de dirofilariosis</span>
+			<span class="hidden">{{ $t('prevalencia_dirofilariosis') }}</span>
 		</nuxt-link>
 
 		<nuxt-link 
@@ -75,7 +75,7 @@ const rn = route.name.split('___')
 					'w-12 group-hover:fill-white',
 					(rn[0] === 'angiostrongilosis') ? 'fill-white': 'fill-brand-green'
 				]" />
-			<span class="hidden">Prevalencia de angiostrongilosis</span>
+			<span class="hidden">{{ $t('prevalencia_angiostrongilosis') }}</span>
 		</nuxt-link>
 	</div>
 </div>

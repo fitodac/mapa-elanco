@@ -13,12 +13,8 @@ import Users2 from '@/components/icons/Users2'
 
 <section class="info-bar">
 	<div class="container-wrapper">
-		<div>
-			1.Carretón, E.; Morchón, R.; García-Rodríguez, S.N.; Rodríguez-Escolar, I.; Matos, J.I.; Costa-Rodríguez, N.; Montoya-Alonso, J.A. Comprehensive Map of Canine Angiostrongylosis in Dogs in Spain. Animals 2022, 12, 2217. https://doi.org/10.3390/ani12172217.
-		</div>
-		<div class="mt-0.5">
-			2. Alho A. M., Schnyder M., Schaper R., Meireles J., Belo S.,  Peter Deplazes P., Madeira de Carvalho L., “Seroprevalence of circulating Angiostrongylus vasorum antigen and parasite-specific antibodies in dogs from Portugal”,Parasitol Res (2016) 115:2567–2572
-		</div>
+		<div>{{ $t('map_ref_angiostrongilosis_p1') }}</div>
+		<div class="mt-0.5">{{ $t('map_ref_angiostrongilosis_p2') }}</div>
 	</div>
 </section>
 
@@ -41,12 +37,10 @@ import Users2 from '@/components/icons/Users2'
 				<div class="text-green-blue-dark text-lg leading-tight font-semibold 
 											sm:text-xl sm:leading-none 
 											lg:text-2xl lg:leading-tight">
-					Consulta en el Mapa Elanco la prevalencia de angiostrongilosis de tu zona o del lugar al que tienes pensado viajar con tu peludo.
+					{{ $t('banner_angiostrongilosis_title') }}
 				</div>
 				
-				<div class="text-green-blue-dark leading-tight mt-5">
-          <strong>Si el lugar seleccionado es de zona 5, significa que el porcentaje de riesgo de infección es alto</strong>. En zonas con porcentajes más bajos el riesgo es menor pero sigue existiendo, por lo que no debes olvidar proteger a tu mascota con antiparasitarios adecuados. <strng>Pregunta a tu veterinario</strng>.
-				</div>
+				<div class="text-green-blue-dark leading-tight mt-5" v-html="$t('banner_angiostrongilosis_content')"/>
 			</div>
 		</div>
 	</div>
@@ -64,15 +58,11 @@ import Users2 from '@/components/icons/Users2'
 			</div>
 			
 			<div class="text-brand-green-dark lg:col-span-9">
-				<h3>Sobre la angiostrongilosis</h3>
+				<h3>{{ $t('angiostrongilosis_about_title') }}</h3>
 				
 				<div class="leading-tight max-w-2xl mt-3">
-					<p>
-						El nematodo <i>angiostrongylus vasorum</i> es el agente causal de la angiostrongilosis canina, una enfermedad emergente en Europa que afecta a las arterias pulmonares y el ventrículo derecho del corazón.
-					</p>
-					<p class="mt-3">
-						Afecta principalmente a animales salvajes, aunque estudios muestran evidencias de expansión de la enfermedad en perros.
-					</p>
+					<p v-html="$t('angiostrongilosis_about_p1')" />
+					<p class="mt-3" v-html="$t('angiostrongilosis_about_p2')" />
 				</div>
 
 				<div class="max-w-2xl mt-14">
@@ -82,11 +72,11 @@ import Users2 from '@/components/icons/Users2'
 							<div class="flex gap-x-6 items-center">
 								<Users1 class="w-20 ml-2 md:w-24" color="#02431D"/>
 								
-								<div class="leading-tight font-medium flex-1 select-none">Si tienes una<br class="hidden md:block"/> mascota, accede aquí.</div>
+								<div class="leading-tight font-medium flex-1 select-none" v-html="$t('acceso_usuarios')" />
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">Conocer más</a>
+								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">{{ $t('conocer_mas') }}</a>
 							</div>
 						</div>
 						
@@ -95,11 +85,11 @@ import Users2 from '@/components/icons/Users2'
 							<div class="flex gap-x-6 items-center">
 								<Users2 class="w-20 ml-2 md:w-24" color="#02431D"/>
 
-								<div class="leading-tight font-medium flex-1 select-none">Veterinario,<br class="hidden md:block"/> accede aquí.</div>
+								<div class="leading-tight font-medium flex-1 select-none" v-html="$t('acceso_veterinarios')" />
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">Conocer más</a>
+								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">{{ $t('conocer_mas') }}</a>
 							</div>
 						</div>
 

@@ -13,15 +13,9 @@ import Users2 from '@/components/icons/Users2'
 
 <section class="info-bar">
 	<div class="container-wrapper">
-		<div>
-			1. Causada por dirofilaria immitis.
-		</div>
-		<div class="mt-0.5">
-			2. Montoya-Alonso, J.A.; Morchón, R.; García-Rodriguez, S.N.; Falcón-Cordón, Y.; Costa-Rodríguez, N.; Matos, J.I.; Escolar, I.R.; Carretón, E. Expansion of Canine Heartworm in Spain. Animals 2022, 12, 1268. https://doi.org/10.3390/ani12101268.
-		</div>
-		<div class="mt-0.5">
-			3. Alho A. M., Meireles J., Belo S., Madeira de Carvalho L., “Dirofilariose Canina e Felina, uma Parasitose em Evolução (I) – Etiologia, Biologia e Epidemiologia” in Clinica Animal, 2014, (2):20-25
-		</div>
+		<div>{{ $t('map_ref_dirofilariosis_p1') }}</div>
+		<div class="mt-0.5">{{ $t('map_ref_dirofilariosis_p2') }}</div>
+		<div class="mt-0.5">{{ $t('map_ref_dirofilariosis_p3') }}</div>
 	</div>
 </section>
 
@@ -44,12 +38,10 @@ import Users2 from '@/components/icons/Users2'
 				<div class="text-brand-orange-dark text-lg leading-tight font-semibold 
 											sm:text-xl sm:leading-none 
 											lg:text-2xl lg:leading-tight">
-					Consulta en el Mapa Elanco la prevalencia de dirofilariosis de tu zona o del lugar al que tienes pensado viajar con tu peludo.
+					{{ $t('banner_dirofilariosis_title') }}
 				</div>
 				
-				<div class="text-brand-orange-dark leading-tight mt-5">
-          <strong>Si el lugar seleccionado es de zona 5, significa que el porcentaje de riesgo de infección es muy alto</strong>. En el resto de zonas el riesgo es menor pero sigue existiendo, por lo que no debes olvidar proteger a tu mascota con antiparasitarios adecuados. <strong>Pregunta a tu veterinario</strong>.
-				</div>
+				<div class="text-brand-orange-dark leading-tight mt-5" v-html="$t('banner_dirofilariosis_content')" />
 			</div>
 		</div>
 	</div>
@@ -67,23 +59,13 @@ import Users2 from '@/components/icons/Users2'
 			</div>
 			
 			<div class="text-brand-orange-dark lg:col-span-9">
-				<h3>Sobre la dirofilariosis</h3>
+				<h3>{{ $t('dirofilariosis_about_title') }}</h3>
 				
 				<div class="leading-tight max-w-2xl mt-3">
-					<p>
-						La <i>dirofilaria immitis</i> es un nematodo parásito que causa la enfermedad del gusano del corazón.
-					</p>
-					<p class="mt-3">
-						La enfermedad del gusano del corazón, causada por la <i>dirofilaria immitis</i>, es una enfermedad grave y potencialmente mortal en perros que puede dejar secuelas permanentes en el animal.
-					</p>
-
-					<p class="mt-3">
-						Los principales signos de presencia del gusano del corazón en perros son: tos, letargo o inactividad, reducción del apetito o pérdida de peso e insuficiencia cardíaca.
-					</p>
-
-					<p class="mt-3">
-            Debido a factores como el cambio climático, España es uno de los países del sur de Europa donde el riesgo de infección en perros domésticos es <strong>moderado/alto</strong> y la dirofilariosis se ha ido extendiendo a nuevos territorios en los últimos años.
-					</p>
+					<p v-html="$t('dirofilariosis_about_p1')" />
+					<p class="mt-3" v-html="$t('dirofilariosis_about_p2')" />
+					<p class="mt-3" v-html="$t('dirofilariosis_about_p3')" />
+					<p class="mt-3" v-html="$t('dirofilariosis_about_p4')" />
 				</div>
 
 				<div class="max-w-2xl mt-14">
@@ -93,11 +75,11 @@ import Users2 from '@/components/icons/Users2'
 							<div class="flex gap-x-6 items-center">
 								<Users1 class="w-20 ml-2 md:w-24" color="#BF5A16"/>
 								
-								<div class="leading-tight font-medium flex-1 select-none">Si tienes una<br class="hidden md:block"/> mascota, accede aquí.</div>
+								<div class="leading-tight font-medium flex-1 select-none" v-html="$t('acceso_usuarios')" />
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">Conocer más</a>
+								<a href="https://mimascotayyo.elanco.com/es" target="_blank" class="btn">{{ $t('conocer_mas') }}</a>
 							</div>
 						</div>
 						
@@ -106,11 +88,11 @@ import Users2 from '@/components/icons/Users2'
 							<div class="flex gap-x-6 items-center">
 								<Users2 class="w-20 ml-2 md:w-24" color="#BF5A16"/>
 
-								<div class="leading-tight font-medium flex-1 select-none">Veterinario,<br class="hidden md:block"/> accede aquí.</div>
+								<div class="leading-tight font-medium flex-1 select-none" v-html="$t('acceso_veterinarios')" />
 							</div>
 
 							<div class="mt-3 flex">
-								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">Conocer más</a>
+								<a href="https://vetconecta.elanco.com/" target="_blank" class="btn">{{ $t('conocer_mas') }}</a>
 							</div>
 						</div>
 

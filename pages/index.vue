@@ -8,9 +8,7 @@ import Map from '@/components/maps/Landing'
 
 	<section>
 		<div class="container-wrapper">
-			<div class="intro">
-				En este mapa encontrarás la prevalencia de <strong>enfermedades como la leishmaniosis, dirofilariosis y angiostrongilosis  en cada región de España y en Portugal.</strong> Si deseas más información sobre cada una de las enfermedades, más abajo podrás informarte.
-			</div>
+			<div class="intro" v-html="$t('landing_map_intro')"/>
 		</div>
 	</section>
 

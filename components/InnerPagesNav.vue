@@ -2,9 +2,7 @@
 <section>
 	<div class="container-wrapper">
 
-		<div class="intro">
-			¿Te interesa saber más sobre una enfermedad específica?
-		</div>
+		<div class="intro">{{ $t('te_interesa_saber_mas') }}</div>
 
 
 		<div class="grid gap-12 place-items-stretch max-w-sm mx-auto md:gap-8 lg:max-w-7xl lg:grid-cols-3">
@@ -16,7 +14,7 @@
 					<div class="card-body">
 						<div>
 							<div class="card-title-sup">Mapa Elanco</div>
-							<div class="card-title">leishmaniosis</div>
+							<div class="card-title">{{ $t('leishmaniosis') }}</div>
 						</div>
 
 						<div>
@@ -35,12 +33,10 @@
 							</svg>
 						</div>
 
-						<div class="card-content">
-              Los <strong>flebotomos</strong>, unos insectos similares a los mosquitos, pueden transmitir la <i>leishmania infantum</i>, causante de la leishmaniosis en los perros, una enfermedad grave con consecuencias fatales si no se previene o diagnostica a tiempo.
-						</div>
+						<div class="card-content" v-html="$t('card_content_leishmaniosis')"/>
 
 						<div class="">
-							<nuxt-link to="/leishmaniosis" class="card-button">Ver prevalencia</nuxt-link>
+							<nuxt-link to="/leishmaniosis" class="card-button">{{ $t('ver_prevalencia') }}</nuxt-link>
 						</div>
 					</div>
 				</div>
@@ -53,7 +49,7 @@
 					<div class="card-body">
 						<div>
 							<div class="card-title-sup">Mapa Elanco</div>
-							<div class="card-title">dirofilariosis</div>
+							<div class="card-title">{{ $t('dirofilariosis') }}</div>
 						</div>
 
 						<div>
@@ -70,12 +66,10 @@
 							</svg>
 						</div>
 
-						<div class="card-content">
-              La enfermedad del <strong>gusano del corazón</strong>, conocida como dirofilariosis y causada por <i>dirofilaria immitis</i>, es una enfermedad grave y potencialmente mortal en perros que puede dejar secuelas permanentes en el animal.
-						</div>
+						<div class="card-content" v-html="$t('card_content_dirofilariosis')"/>
 
 						<div class="">
-							<nuxt-link to="/dirofilariosis" class="card-button">Ver prevalencia</nuxt-link>
+							<nuxt-link to="/dirofilariosis" class="card-button">{{ $t('ver_prevalencia') }}</nuxt-link>
 						</div>
 					</div>
 				</div>
@@ -88,7 +82,7 @@
 					<div class="card-body">
 						<div>
 							<div class="card-title-sup">Mapa Elanco</div>
-							<div class="card-title">angiostrongilosis </div>
+							<div class="card-title">{{ $t('angiostrongilosis') }}</div>
 						</div>
 
 						<div>
@@ -105,12 +99,10 @@
 							</svg>
 						</div>
 
-						<div class="card-content">
-              La <strong>angiostrongilosis canina</strong> es una enfermedad emergente en Europa causada por <i>angiostrongylus vasorum</i> que afecta a las arterias pulmonares y el ventrículo derecho del corazón.
-						</div>
+						<div class="card-content" v-html="$t('card_content_angiostrongilosis')" />
 
 						<div class="">
-							<nuxt-link to="/angiostrongilosis" class="card-button">Ver prevalencia</nuxt-link>
+							<nuxt-link to="/angiostrongilosis" class="card-button">{{ $t('ver_prevalencia') }}</nuxt-link>
 						</div>
 					</div>
 				</div>

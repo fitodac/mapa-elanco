@@ -7,15 +7,8 @@
 				<img src="/img/world.svg" alt="Mundo" class="w-10 mx-auto"/>
 			</div>
 
-			<div class="intro-primary">
-				Debido al cambio climático, los parásitos y las enfermedades 
-				que transmiten, se pueden expandir a zonas donde 
-				no se encontraban anteriormente.
-			</div>
-
-			<div class="intro-secondary">
-				Desde Elanco nos preocupamos y trabajamos día a día para garantizar la salud y bienestar de tu mascota.
-			</div>
+			<div class="intro-primary">{{ $t('hero_intro_primary') }}</div>
+			<div class="intro-secondary">{{ $t('hero_intro_secondary') }}</div>
 		</div>
 
 	</div>

@@ -3,32 +3,19 @@ import { useI18n } from 'vue-i18n'
 // import brand from `@/assets/img/elanco-es.svg` 
 // import brand from `~/static/elanco-${i18n.locale}.svg`
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const route = useRoute()
 
 
-const info_title_langs = {
-	es: {
-		index: "de prevalencia de <strong>enfermedades parasitarias</strong> en España y Portugal",
-		leishmaniosis: "de prevalencia de <strong>leishmaniosis</strong> en España<sup>1</sup> y Portugal<sup>2</sup>",
-		angiostrongilosis: "de prevalencia de <strong>angiostrongilosis</strong> en España<sup>1</sup> y Portugal<sup>2</sup>",
-		dirofilariosis: "de prevalencia de <strong>dirofilariosis<sup>1</sup></strong> en España<sup>1</sup> y Portugal<sup>2</sup>"
-	},
-	pt: {
-		index: "de prevalencia de <strong>enfermedades parasitarias</strong> en España y Portugal",
-		leishmaniosis: "de prevalencia de <strong>leishmaniosis</strong> en España<sup>1</sup> y Portugal<sup>2</sup>",
-		angiostrongilosis: "de prevalencia de <strong>angiostrongilosis</strong> en España<sup>1</sup> y Portugal<sup>2</sup>",
-		dirofilariosis: "de prevalencia de <strong>dirofilariosis<sup>1</sup></strong> en España<sup>1</sup> y Portugal<sup>2</sup>"
-	}
-}
-
 const route_name = route.name.split('___')
 
-const info_title = ref(info_title_langs[route_name[1]][route_name[0]])
-
-watch(route, r => {
-	const route_name = r.name.split('___')
-	info_title.value = info_title_langs[route_name[1]][route_name[0]]
+const info_title = computed(() => {
+	return ({
+		index: t('de_prevalencia_landing'),
+		leishmaniosis: t('de_prevalencia_leishmaniosis'),
+		angiostrongilosis: t('de_prevalencia_angiostrongilosis'),
+		dirofilariosis: t('de_prevalencia_dirofilariosis')
+	})[route_name[0]]
 })
 </script>
 
@@ -65,7 +52,7 @@ watch(route, r => {
 
 		<div class="text-center pt-8 pb-5 md:pb-10 lg:pb-16">
       <nuxt-link href="/">
-			  <h1 class="main-title">{{ $t('Mapa Elanco') }}</h1>
+			  <h1 class="main-title">{{ $t('mapa_elanco') }}</h1>
       </nuxt-link>
 			<div class="info-title" v-html="info_title"></div>
 
