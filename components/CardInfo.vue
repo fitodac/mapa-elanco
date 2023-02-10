@@ -1,8 +1,8 @@
 <script setup>
 import { Store } from '@/store/store.js'
 
-
 const store = Store()
+const { locale, t } = useI18n()
 
 const info = computed(() => store.getInfo)
 
@@ -38,8 +38,17 @@ const show_info = computed(() => {
 
 const leishmaniosis_text_red = computed(() => {
 	if( 'leishmaniosis' === info.value.type && '¡Alerta!' === info.value.leishmaniosis.alert ) return 'red-alert'
+	if( 'angiostrongilosis' === info.value.type && '>3%' === info.value.angiostrongilosis.value ) return 'red-alert'
 	return ''
 })
+
+
+const getAlert = val => {
+	return ({
+		'¡Precaución!': t('caution'),
+		'¡Alerta!': t('alert')
+	})[val]
+}
 </script>
 
 
@@ -58,8 +67,17 @@ const leishmaniosis_text_red = computed(() => {
 			</div>
 
 			<div 
-				class="card-title" :class="[leishmaniosis_text_red]">{{ info.title }}</div>
-			<div v-if="info.type !== 'full'" class="card-alert" :class="[leishmaniosis_text_red]">{{ info[info.type].alert }}</div>
+				class="card-title" 
+				:class="[leishmaniosis_text_red]">
+				{{ info.title }}
+			</div>
+			
+			<div 
+				v-if="info.type !== 'full'" 
+				class="card-alert" 
+				:class="[leishmaniosis_text_red]">
+				{{ getAlert(info[info.type].alert) }}
+			</div>
 		</div>
 
 
@@ -84,12 +102,12 @@ const leishmaniosis_text_red = computed(() => {
 						<div 
 							class="card-body--section--subtitle"
 							:style="{color: info.leishmaniosis?.color}">
-							de prevalencia*
+							{{ $t('of_prevalence') }}
 						</div>
-						<div class="card-body--section--info">(porcentaje de perros infectados con <span class="italic">leishmania infantum</span>).</div>
+						<div class="card-body--section--info" v-html="$t('leishmaniosis_percent_of_dogs_infected')" />
 					</div>
 
-					<div v-else class="leading-none flex-1">No disponemos de datos de prevalencia sobre esta zona.</div>
+					<div v-else class="leading-none flex-1">{{ $t('no_data') }}</div>
 				</div>
 
 
@@ -107,11 +125,13 @@ const leishmaniosis_text_red = computed(() => {
 							:style="{color: info.dirofilariosis?.color}">{{ info.dirofilariosis?.value }}</div>
 						<div 
 							class="card-body--section--subtitle"
-							:style="{color: info.dirofilariosis?.color}">de prevalencia*</div>
-						<div class="card-body--section--info">(porcentaje de perros infectados con <span class="italic">dirofilaria immitis</span>).</div>
+							:style="{color: info.dirofilariosis?.color}">
+							{{ $t('of_prevalence') }}
+						</div>
+						<div class="card-body--section--info" v-html="$t('dirofilariosis_percent_of_dogs_infected')" />
 					</div>
 
-					<div v-else class="leading-none flex-1">No disponemos de datos de prevalencia sobre esta zona.</div>
+					<div v-else class="leading-none flex-1">{{ $t('no_data') }}</div>
 				</div>
 
 
@@ -129,22 +149,20 @@ const leishmaniosis_text_red = computed(() => {
 							:style="{color: info.angiostrongilosis?.color}">{{ info.angiostrongilosis?.value }}</div>
 						<div 
 							class="card-body--section--subtitle"
-							:style="{color: info.angiostrongilosis?.color}">de prevalencia*</div>
-						<div class="card-body--section--info">(porcentaje de perros infectados con <span class="italic">angiostrongylus vasorum</span>).</div>
+							:style="{color: info.angiostrongilosis?.color}">
+							{{ $t('of_prevalence') }}
+						</div>
+						<div class="card-body--section--info" v-html="$t('angiostrongilosis_percent_of_dogs_infected')" />
 					</div>
 
-					<div v-else class="leading-none flex-1">No disponemos de datos de prevalencia sobre esta zona.</div>
+					<div v-else class="leading-none flex-1">{{ $t('no_data') }}</div>
 				</div>
 			</div>
 
 
 
 			<div class="text-xs leading-tight text-center mt-6">
-				<span>
-					<strong>Consulta a tu veterinario</strong> <br>
-					el antiparasitario más adecuado <br>
-					antes de viajar.
-				</span>
+				<span v-html="$t('consult_your_vet')" />
 			</div>
 
 			<img 
@@ -156,26 +174,13 @@ const leishmaniosis_text_red = computed(() => {
 
 			<div v-if="show_info"
 				class="text-gray-400 text-[9px] leading-none text-center mt-3">
-				<span>
-					*Teniendo en cuenta que los perros se 
-					desplazan de unas zonas a otras, no se 
-					puede descartar que aparezcan nuevos 
-					casos de la enfermedad en zonas donde 
-					actualmente no existe.
-				</span>
+				<span>{{ $t('info_1') }}</span>
 			</div>
 
 			<div 
 				v-if="store.isPortugal"
 				class="text-gray-400 text-[9px] leading-none text-center mt-2">
-				<span>
-					**Con un 0,66 % de los perros examinados positivos en ambos ELISA, 
-					la prevalencia en Portugal es aparentemente mayor que la encontrada 
-					para Alemania (Schnyder et al. 2013a) o Polonia (Schnyder et al. 2013b) 
-					y menor que en Hungría (Schnyder et al. 2015a), Reino Unido 
-					(Schnyder et al. 2013a) e Italia (Guardone et al. 2013), 
-					pero no significativamente.
-				</span>
+				<span>{{ $t('info_2') }}</span>
 			</div>
 
 		</div>

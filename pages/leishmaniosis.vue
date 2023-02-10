@@ -51,7 +51,7 @@ import Users2 from '@/components/icons/Users2'
 
 
 <section class="about" 
-	:style="{backgroundImage: 'url(img/bg-dog-leishmaniosis.webp)'}">
+	:style="{backgroundImage: 'url(/img/bg-dog-leishmaniosis.webp)'}">
 	<div class="container-wrapper">
 		<div class="grid gap-6 lg:grid-cols-12">
 

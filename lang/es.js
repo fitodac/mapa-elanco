@@ -31,6 +31,16 @@ export default {
 	card_content_angiostrongilosis: `La <strong>angiostrongilosis canina</strong> es una enfermedad emergente en Europa causada por <i>angiostrongylus vasorum</i> que afecta a las arterias pulmonares y el ventrículo derecho del corazón.`,
 	ver_prevalencia: `Ver prevalencia`,
 
+	of_prevalence: `de prevalencia*`,
+	leishmaniosis_percent_of_dogs_infected: `(porcentaje de perros infectados con <span class="italic">leishmania infantum</span>).`,
+	dirofilariosis_percent_of_dogs_infected: `(porcentaje de perros infectados con <span class="italic">dirofilaria immitis</span>).`,
+	angiostrongilosis_percent_of_dogs_infected: `(porcentaje de perros infectados con <span class="italic">angiostrongylus vasorum</span>).`,
+	no_data: `No disponemos de datos de prevalencia sobre esta zona.`,
+	consult_your_vet: `<strong>Consulta a tu veterinario</strong> <br> el antiparasitario más adecuado <br>antes de viajar.`,
+	info_1: `*Teniendo en cuenta que los perros se desplazan de unas zonas a otras, no se puede descartar que aparezcan nuevos casos de la enfermedad en zonas donde actualmente no existe.`,
+	info_2: `**Con un 0,66 % de los perros examinados positivos en ambos ELISA, la prevalencia en Portugal es aparentemente mayor que la encontrada para Alemania (Schnyder et al. 2013a) o Polonia (Schnyder et al. 2013b) y menor que en Hungría (Schnyder et al. 2015a), Reino Unido (Schnyder et al. 2013a) e Italia (Guardone et al. 2013), pero no significativamente.`,
+
+
 	map_ref_leishmaniosis_p1: `1. Gálvez R, Montoya A, Cruz I, et al. Latest trends in Leishmania infantum infection in dogs in Spain, Part I: mapped seroprevalence and sand fly distributions. Parasit Vectors. 2020;13(1):204. Published 2020 Apr 21. doi:10.1186/s13071-020-04081-7`,
 	map_ref_leishmaniosis_p2: `2. Maia C. et al., “Primeiro relatório regular da LEISHnet ONLeish – Observatório Nacional das Leishmanioses”, pag. 22-26. Janeiro-Fevereiro 2011 Veterinary Medicine.`,
 
@@ -51,9 +61,7 @@ export default {
 	banner_dirofilariosis_content: `<strong>Si el lugar seleccionado es de zona 5, significa que el porcentaje de riesgo de infección es muy alto</strong>. En el resto de zonas el riesgo es menor pero sigue existiendo, por lo que no debes olvidar proteger a tu mascota con antiparasitarios adecuados. <strong>Pregunta a tu veterinario</strong>.`,
 
 	leishmaniosis_about_title: `Sobre la leishmaniosis`,
-	leishmaniosis_about_p1: `<strong>La leishmaniosis es una enfermedad grave e incurable</strong>, que se puede originar tras la transmisión de <i>leishmania
-		infantum</i> por los <strong>flebotomos</strong>, unos insectos similares a los mosquitos, que puede tener consecuencias fatales para la salud de los perros 
-		si no se previene o se diagnostica a tiempo.`,
+	leishmaniosis_about_p1: `<strong>La leishmaniosis es una enfermedad grave e incurable</strong>, que se puede originar tras la transmisión de <i>leishmania infantum</i> por los <strong>flebotomos</strong>, unos insectos similares a los mosquitos, que puede tener consecuencias fatales para la salud de los perros si no se previene o se diagnostica a tiempo.`,
 	leishmaniosis_about_p2: `La presencia del flebotomo puede verse afectada por el cambio climático y hacer que el riesgo de infección esté presente en gran 
 		parte de España y Portugal la mayor parte del año.`,
 
@@ -76,6 +84,12 @@ export default {
 
 	products_title: `Te ayudamos a proteger a tu perro contra la leishmaniosis`,
 	seresto_description: `El collar que libera de pulgas, garrapatas <strong class="text-brand-blue">y reduce el riesgo de leishmaniosis canina.</strong>`,
-	advantix_description: `<strong class="text-red-700">La pipeta experta en leishmaniosis</strong> que también elimina pulgas y garrapatas.`
+	advantix_description: `<strong class="text-red-700">La pipeta experta en leishmaniosis</strong> que también elimina pulgas y garrapatas.`,
+
+	caution: '¡Precaución!',
+	alert: '¡Alerta!',
+
+	leishmaniosis_footer_seresto_info: `Seresto&reg; es un medicamento veterinario. Consulta la ficha técnica en <a href="//seresto.es" target="_blank">seresto.es</a>. En caso de duda consulta a tu veterinario.`,
+	leishmaniosis_footer_advantix_info: `Advantix&reg; es un medicamento veterinario. Consulta la ficha técnica en <a href="//seresto.es" target="_blank">advantix.es</a>. En caso de duda consulta a tu veterinario.`
 
 }

@@ -1,4 +1,5 @@
 const portugal = data => {
+
 return `<g id="portugal-stripes" 
 					style="
 						transform: translate(13.5px, 1px); 

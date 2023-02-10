@@ -126,8 +126,8 @@ map_data.castellon.active = map_data.castellon.leishmaniosis.color
 map_data.castellon.circle = map_data.circles
 
 // Ceuta
-map_data.ceuta.color = map_data.ceuta.leishmaniosis.color
-map_data.ceuta.active = map_data.ceuta.leishmaniosis.color
+map_data.ceuta.color = '#D1D5DB'
+map_data.ceuta.active = '#D1D5DB'
 map_data.ceuta.circle = map_data.circles
 
 // Ciudad Real
@@ -216,8 +216,8 @@ map_data.malaga.active = map_data.malaga.leishmaniosis.color
 map_data.malaga.circle = map_data.circles
 
 // Melilla
-map_data.melilla.color = map_data.melilla.leishmaniosis.color
-map_data.melilla.active = map_data.melilla.leishmaniosis.color
+map_data.melilla.color = '#D1D5DB'
+map_data.melilla.active = '#D1D5DB'
 map_data.melilla.circle = map_data.circles
 
 // Murcia
@@ -401,17 +401,17 @@ map_data.algarve.active = map_data.algarve.leishmaniosis.color
 map_data.algarve.circle = map_data.circles
 
 // Madeira
-map_data.islas_portugal.madeira.color = map_data.islas_portugal.madeira.leishmaniosis.color
-map_data.islas_portugal.madeira.active = map_data.islas_portugal.madeira.leishmaniosis.color
+map_data.islas_portugal.madeira.color = '#D1D5DB' // fill-[#D1D5DB]
+map_data.islas_portugal.madeira.active = '#D1D5DB'
 map_data.islas_portugal.madeira.circle = map_data.circles
 
 // Açores
-map_data.islas_portugal.acores.color = map_data.islas_portugal.acores.leishmaniosis.color
-map_data.islas_portugal.acores.active = map_data.islas_portugal.acores.leishmaniosis.color
+map_data.islas_portugal.acores.color = '#D1D5DB'
+map_data.islas_portugal.acores.active = '#D1D5DB'
 map_data.islas_portugal.acores.circle = map_data.circles
 
 // Portugal
-map_data.portugal = { stroke: '#004266' }
+map_data.portugal = { stroke: 'rgba(0,66,102,.6)' }
 
 
 

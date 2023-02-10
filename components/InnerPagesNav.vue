@@ -36,7 +36,11 @@
 						<div class="card-content" v-html="$t('card_content_leishmaniosis')"/>
 
 						<div class="">
-							<nuxt-link to="/leishmaniosis" class="card-button">{{ $t('ver_prevalencia') }}</nuxt-link>
+							<nuxt-link 
+								:to="localePath('leishmaniosis')" 
+								class="card-button">
+									{{ $t('ver_prevalencia') }}
+							</nuxt-link>
 						</div>
 					</div>
 				</div>
@@ -69,7 +73,11 @@
 						<div class="card-content" v-html="$t('card_content_dirofilariosis')"/>
 
 						<div class="">
-							<nuxt-link to="/dirofilariosis" class="card-button">{{ $t('ver_prevalencia') }}</nuxt-link>
+							<nuxt-link 
+								:to="localePath('dirofilariosis')" 
+								class="card-button">
+								{{ $t('ver_prevalencia') }}
+							</nuxt-link>
 						</div>
 					</div>
 				</div>
@@ -102,7 +110,11 @@
 						<div class="card-content" v-html="$t('card_content_angiostrongilosis')" />
 
 						<div class="">
-							<nuxt-link to="/angiostrongilosis" class="card-button">{{ $t('ver_prevalencia') }}</nuxt-link>
+							<nuxt-link 
+								:to="localePath('angiostrongilosis')" 
+								class="card-button">
+								{{ $t('ver_prevalencia') }}
+							</nuxt-link>
 						</div>
 					</div>
 				</div>

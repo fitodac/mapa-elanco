@@ -3,6 +3,7 @@ import Mosquito from '@/components/icons/Mosquito'
 import Heart from '@/components/icons/Heart'
 import Lungs from '@/components/icons/Lungs'
 const route = useRoute()
+const router = useRouter()
 
 const rn = route.name.split('___')
 </script>
@@ -39,7 +40,7 @@ const rn = route.name.split('___')
 
 	<div class="menu">
 		<nuxt-link 
-			to="/leishmaniosis" 
+			:to="localePath('leishmaniosis')" 
 			class="menu-link menu-link-blue group"
 			:class="{'active': (rn[0] === 'leishmaniosis')}">
 			
@@ -53,7 +54,7 @@ const rn = route.name.split('___')
 		</nuxt-link>
 
 		<nuxt-link 
-			to="/dirofilariosis" 
+			:to="localePath('dirofilariosis')" 
 			class="menu-link menu-link-orange group"
 			:class="{'active': (rn[0] === 'dirofilariosis')}">
 			<Heart 
@@ -66,7 +67,7 @@ const rn = route.name.split('___')
 		</nuxt-link>
 
 		<nuxt-link 
-			to="/angiostrongilosis" 
+			:to="localePath('angiostrongilosis')" 
 			class="menu-link menu-link-green group"
 			:class="{'active': (rn[0] === 'angiostrongilosis')}">
 			<Lungs 

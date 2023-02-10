@@ -1,3 +1,11 @@
+<script setup>
+const route = useRoute(),
+			route_name = route.name.split('__')[0]
+
+console.log(route_name)
+</script>
+
+
 <template>
 <section class="main-footer">
 	<div class="container-wrapper">
@@ -20,6 +28,10 @@
 
 	<div class="footer-secondary">
 		<div class="container-wrapper">
+			<div v-if="'leishmaniosis' === route_name">
+				<div v-html="$t('leishmaniosis_footer_seresto_info')" />
+				<div v-html="$t('leishmaniosis_footer_advantix_info')" />
+			</div>
 			<div>&copy; Elanco  dPM-ES-22-0463</div>
 		</div>
 	</div>

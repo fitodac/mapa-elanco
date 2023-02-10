@@ -22,3 +22,11 @@ watch(route, val => store.resetMap() )
 
 <CardInfo v-if="width <= 768" />
 </template>
+
+
+<style scoped>
+#mainWrapper{
+	max-width: 1900px;
+	margin: 0 auto;
+}
+</style>

@@ -23,13 +23,15 @@ const info_title = computed(() => {
 
 
 <template>
-<div class="main-header bg-white pt-5 relative">
+<div 
+	class="main-header pt-5 relative"
+	:class="{'bg-transparent': 'index' === route_name[0], 'bg-white': 'index' !== route_name[0]}">
 	<div class="container-wrapper">
 		
 		<div class="topbar">
 			<div class="brand">
 				<span class="sr-only">Elanco</span>
-				<nuxt-link href="/">
+				<nuxt-link :to="localePath('/')">
 					<img :src="`/img/elanco-${ $i18n.locale }.svg`" alt="Logotipo" />
 				</nuxt-link>
 			</div>
@@ -51,7 +53,7 @@ const info_title = computed(() => {
 
 
 		<div class="text-center pt-8 pb-5 md:pb-10 lg:pb-16">
-      <nuxt-link href="/">
+      <nuxt-link :to="localePath('/')">
 			  <h1 class="main-title">{{ $t('mapa_elanco') }}</h1>
       </nuxt-link>
 			<div class="info-title" v-html="info_title"></div>

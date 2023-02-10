@@ -28,7 +28,12 @@
 					class="product-description" />
 
 				<div class="mt-5 md:mt-10">
-					<nuxt-link class="btn" href="#" target="_blank">{{ $t('conocer_mas') }}</nuxt-link>
+					<nuxt-link 
+						class="btn" 
+						href="#" 
+						target="_blank">
+						{{ $t('conocer_mas') }}
+					</nuxt-link>
 				</div>
 			</div>
 
@@ -51,7 +56,12 @@
 					class="product-description" />
 
 				<div class="mt-5 md:mt-10">
-					<nuxt-link class="btn" href="#" target="_blank">{{ $t('conocer_mas') }}</nuxt-link>
+					<nuxt-link 
+						class="btn" 
+						href="#" 
+						target="_blank">
+						{{ $t('conocer_mas') }}
+					</nuxt-link>
 				</div>
 			</div>
 
