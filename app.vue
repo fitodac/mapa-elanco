@@ -24,9 +24,4 @@ watch(route, val => store.resetMap() )
 </template>
 
 
-<style scoped>
-#mainWrapper{
-	max-width: 1900px;
-	margin: 0 auto;
-}
-</style>
+<style scoped></style>

@@ -90,6 +90,7 @@ export default {
 	alert: '¡Alerta!',
 
 	leishmaniosis_footer_seresto_info: `Seresto&reg; es un medicamento veterinario. Consulta la ficha técnica en <a href="//seresto.es" target="_blank">seresto.es</a>. En caso de duda consulta a tu veterinario.`,
-	leishmaniosis_footer_advantix_info: `Advantix&reg; es un medicamento veterinario. Consulta la ficha técnica en <a href="//seresto.es" target="_blank">advantix.es</a>. En caso de duda consulta a tu veterinario.`
+	leishmaniosis_footer_advantix_info: `Advantix&reg; es un medicamento veterinario. Consulta la ficha técnica en <a href="//seresto.es" target="_blank">advantix.es</a>. En caso de duda consulta a tu veterinario.`,
+	elanco_animal_health: `&copy; 2023 Elanco Animal Health, Inc. o sus filiales. Todos los derechos reservados. Advantix&reg;, Seresto&reg;, Elanco y la barra diagonal son marcas registradas de Elanco o sus filiales. PM-ES-22-0463`
 
 }

@@ -30,7 +30,7 @@
 				<div class="mt-5 md:mt-10">
 					<nuxt-link 
 						class="btn" 
-						href="#" 
+						href="https://mimascotayyo.elanco.com/es/nuestros-productos/seresto/seresto-perros " 
 						target="_blank">
 						{{ $t('conocer_mas') }}
 					</nuxt-link>
@@ -58,7 +58,7 @@
 				<div class="mt-5 md:mt-10">
 					<nuxt-link 
 						class="btn" 
-						href="#" 
+						href="https://mimascotayyo.elanco.com/es/nuestros-productos/advantix-pipeta " 
 						target="_blank">
 						{{ $t('conocer_mas') }}
 					</nuxt-link>

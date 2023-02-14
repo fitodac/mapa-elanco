@@ -75,6 +75,7 @@ import setubal from '@/composables/map/setubal.js'
 import beja from '@/composables/map/beja.js'
 import algarve from '@/composables/map/algarve.js'
 import islas_portugal from '@/composables/map/islas-portugal.js'
+import mosquito from '@/composables/map/mosquito.js'
 
 
 const mapContent = data => {
@@ -158,6 +159,8 @@ const mapContent = data => {
 	resp += algarve(data.algarve)
 	resp += islas_portugal(data.islas_portugal)
 	resp += portugal(data.portugal)
+	
+	if( data.mosquito ) resp += mosquito()
 
 	return resp
 }

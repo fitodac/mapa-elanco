@@ -115,7 +115,7 @@ data.avila = {
 		alert: '¡Precaución!'
 	},
 	angiostrongilosis: {
-		value: null,
+		value: '0%',
 		color: '#E4EBBB',
 		alert: null
 	}

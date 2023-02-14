@@ -3,7 +3,7 @@ import data from '@/composables/map-data'
 const map_data = {
 	color: '#F7E4F9',
 	active: '#913393', // fill-[#913393]
-	circles: false,
+	circles: true,
 	info_type: 'full',
 	...JSON.parse(JSON.stringify(data))
 }

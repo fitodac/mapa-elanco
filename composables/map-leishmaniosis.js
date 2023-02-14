@@ -414,6 +414,8 @@ map_data.islas_portugal.acores.circle = map_data.circles
 map_data.portugal = { stroke: 'rgba(0,66,102,.6)' }
 
 
+map_data.mosquito = true
+
 
 
 

@@ -51,6 +51,12 @@ export default defineNuxtConfig({
 	],
 
 
+	buildModules: [
+		['@nuxtjs/google-analytics', { id: 'G-LVRH7QS78M' }],
+		['@nuxtjs/google-analytics', { id: 'UA-230974840-1' }]
+	],
+
+
 	i18n
 
 

@@ -17,6 +17,7 @@
     "pinia": "^2.0.29"
   },
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "sass": "^1.58.0"
   }
 }

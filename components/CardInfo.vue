@@ -5,9 +5,9 @@ const store = Store()
 const { locale, t } = useI18n()
 
 const info = computed(() => store.getInfo)
-
-const card_header_class = ref([])
 const card_header_bg = ref('rgb(156 163 175 / 1)')
+const card_header_style = ref(null)
+const card_header_stripe = ref(null)
 
 
 watch(info, val => {
@@ -19,7 +19,19 @@ watch(info, val => {
 		leishmaniosis: val.leishmaniosis?.color
 	})[val.type]
 
-	// console.table('info', info.value)
+	card_header_stripe.value = ({
+		full: 'rgba(255, 255, 255, .2)',
+		angiostrongilosis: 'rgb(0, 64, 4, .3)',
+		dirofilariosis: 'rgba(255, 255, 255, .2)',
+		leishmaniosis: 'rgba(0,66,102,.3)',
+	})[val.type]
+
+	card_header_style.value = { backgroundColor: card_header_bg }
+
+	if( 'portugal' === info.value.country ){
+		card_header_style.value.backgroundImage = `linear-gradient(142deg, ${card_header_stripe.value} 10.71%, ${card_header_bg.value} 10.71%, ${card_header_bg.value} 50%, ${card_header_stripe.value} 50%, ${card_header_stripe.value} 60.71%, ${card_header_bg.value} 60.71%, ${card_header_bg.value} 100%)`
+	}
+
 })
 
 
@@ -59,9 +71,7 @@ const getAlert = val => {
 	class="card-info-wrapper">
 	<div class="card">
 			
-		<div 
-			class="card-header"
-			:style="{background: card_header_bg}">
+		<div class="card-header" :style="card_header_style">
 			<div class="flex justify-end">
 				<button class="card--btn-close" @click="close">&times;</button>
 			</div>
@@ -202,6 +212,7 @@ const getAlert = val => {
 
 .card-header{
 	@apply bg-gray-400 px-5 pt-2 pb-3 select-none;
+	background-size: 14px 12px;
 }
 
 .card-header-landing{
@@ -244,7 +255,6 @@ const getAlert = val => {
 .card-body--section--info{
 	@apply text-xs leading-tight mt-1;
 }
-
 
 .card--btn-close{
 	@apply text-white text-2xl leading-none w-7 h-7 p-0 -mr-3 inline-block;

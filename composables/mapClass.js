@@ -80,7 +80,15 @@ export default class Map{
 				el.classList.value = `active fill-[${active_class}]`
 
 				// Shows the information in the card
-				store.setInfo({info_type: this.data.info_type, ...d})
+				const name = d.id.replace('map-', ''),
+							country = this.portugal.includes(name) ? 'portugal' : 'spain'
+
+				// const country = 
+				store.setInfo({
+					info_type: this.data.info_type, 
+					...d,
+					country
+				})
 				store.showInfo()
 			})
 		})

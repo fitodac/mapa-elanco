@@ -24,10 +24,18 @@
 	@apply -mt-60 py-72 relative z-10;
 }
 .intro-primary{
-	@apply text-brand-blue-dark text-xl leading-tight;
+	@apply text-brand-blue-dark text-xl leading-tight 2xl:text-3xl;
 }
 
 .intro-secondary{
-	@apply text-brand-blue text-xl font-bold leading-tight italic mt-4;
+	@apply text-brand-blue text-xl font-bold leading-tight italic mt-4 2xl:text-2xl;
+}
+
+@media (min-width: 1600px){
+	.hero{
+		padding-top: 25rem;
+		padding-bottom: 30rem;
+		margin-top: -20rem;
+	}
 }
 </style>

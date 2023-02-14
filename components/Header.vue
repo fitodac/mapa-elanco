@@ -24,7 +24,7 @@ const info_title = computed(() => {
 
 <template>
 <div 
-	class="main-header pt-5 relative"
+	class="main-header pt-5 relative z-30"
 	:class="{'bg-transparent': 'index' === route_name[0], 'bg-white': 'index' !== route_name[0]}">
 	<div class="container-wrapper">
 		

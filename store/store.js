@@ -9,6 +9,7 @@ export const Store = defineStore('main', {
 			dirofilariosis: null,
 			angiostrongilosis: null,
 			type: null,
+			country: null
 		},
 		showing_info: false,
 		map: {
@@ -43,6 +44,7 @@ export const Store = defineStore('main', {
 			this.info.dirofilariosis = data.dirofilariosis
 			this.info.angiostrongilosis = data.angiostrongilosis
 			this.info.type = data.info_type
+			this.info.country = data.country
 		},
 
 		showInfo(){ 
@@ -59,7 +61,8 @@ export const Store = defineStore('main', {
 				leishmaniosis: null,
 				dirofilariosis: null,
 				angiostrongilosis: null,
-				type: null
+				type: null,
+				country: null
 			})
 		},
 
